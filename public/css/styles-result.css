@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #6fedd6;
+    font-family: "Montserrat";
+    text-align: center;   
+}
+
+.back {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+
+.back a {
+    color: #149983;
+}
+
+.back p {
+    float: right;
+    margin-left: 0.5rem;
+}
+
+.back a:hover {
+    color: #0F3D3E;
+}
+
+section {
+    height: 93vh;
+    width: 100%;
+}
+
+.hero {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.temperature {
+    margin-top: 0;
+    font-size: 8rem;
+}
+
+.description {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.location {
+    margin-top: 32px;
+    font-size: 1.5rem;
+    
+}
+
+form {
+    width: 50%;
+}
+
+input {
+    width: 60%;
+    margin-top: 3rem;
+    height: 2.5rem;
+    padding: 10px;
+    border: 0;
+    border-radius: 8px;
+    border-color: white;
+    font-size: 1.2rem;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0;
+    background-color: #ff9551;
+    border: 0;
+    border-radius: 20px;
+    padding: 5px;
+    width: 50%;
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #FF4A4A;
+    color: aliceblue;
+}
+
+footer {
+    color: #149983;
+    height: 5vh;
+}
+
+footer a {
+    color: #0F3D3E;
+}
+
+footer p:last-child {
+    margin-top: 5px;
+}
+
+@keyframes pulse{
+    0% {
+        transform:  scale(1);
+    }
+    100% {
+        transform:  scale(1.1);
+    }
+}
+
+.icon {
+    animation: pulse 0.75s ease-in-out 0s infinite alternate none;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Weather App - <%= location %></title>
+    <link rel="stylesheet" href="css/styles-result.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="back">
+        <a href="/">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p>Back to main page</p>
+        </a>
+    </div>
+
+    <section>
+       <div class="hero">
+            <img title="<%= desc %>" class="icon" src="<%= iconURL %>" alt="">
+            <h1 class="temperature"><%= temperature %><sup>o</sup>C</h1>
+            <p class="description"><%= desc %></p>
+            <h2 class="location"><i class="fa-solid fa-location-dot"></i> <%= location %></h2>
+            <form action="/" method="POST">
+                <input id="cityName" type="text" name="cityName" placeholder="Enter your city name" required>
+                <button type="submit">Search</button>
+            </form>
+       </div> 
+    </section>
+    
+    <%- include('footer'); -%>
+
+</body>
+</html>
